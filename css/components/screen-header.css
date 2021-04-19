@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+    margin-top: 45px;
+}
+.main__text {
+    font-size: 30px;
+    font-weight: 600;
+}
+.main__icon .fas{
+    margin: 0px 9px;
+}
+.main__icon>button {
+    background-color: white;
+}
+.main__icon>button i {
+    font-size: 23px;
+}
+
+@keyframes rotateCog {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.main__icon .fa-cog:hover {
+    animation: rotateCog 1s linear infinite;
+}
